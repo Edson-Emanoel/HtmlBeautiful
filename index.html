@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Sidebar</title>
+</head>
+<body>
+    <nav id="sidebar">
+        <div id="sidebar_content">
+            <div id="user">
+                <img src="src/images/avatar.jpg" alt="Avatar" id="user_avatar" width="200px">
+    
+                <p id="user_infos">
+                    <span class="item-description">
+                        Fulana de Tal
+                    </span>
+                    <span class="item-description">
+                        Lorem Ipsum
+                    </span>
+                </p>
+            </div>
+    
+            <ul id="side-items">
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <span class="item-description">
+                            Dashboard
+                        </span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-solid fa-user"></i>
+                        <span class="item-description">
+                            Usuário
+                        </span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-solid fa-bell"></i>
+                        <span class="item-description">
+                            Notificações
+                        </span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-solid fa-box"></i>
+                        <span class="item-description">
+                            Produtos
+                        </span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-solid fa-image"></i>
+                        <span class="item-description">
+                            Imagens
+                        </span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-solid fa-gear"></i>
+                        <span class="item-description">
+                            Configurações
+                        </span>
+                    </a>
+                </li>
+            </ul>
+    
+            <button id="open_btn">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <div id="logout">
+            <button id="logout_btn">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span class="item-description">
+                    Logout
+                </span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <h1>Título</h1>
+    </main>
+
+    <script src="src/javascript/script.js"></script>
+</body>
+</html>
