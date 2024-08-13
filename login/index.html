@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        :root {
+            --orange: #fb9406;
+            --gray: #363636;
+            --grayv2: #1d1d1d;
+            --grayv3: #242424;
+
+            --bgInput: #161616;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
+        }
+
+        .principal {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            background-color: var(--grayv2);
+        }
+
+        .header {
+            text-align: center;
+            color: var(--orange);
+        }
+
+        .header > h6 {
+            color: var(--gray);
+        }
+
+        form {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        
+        form > h3 {
+            color: #FFF;
+            margin-bottom: 15px;
+        }
+
+        form > .divInput{
+            border-radius: 8px;
+            background-color: var(--bgInput);
+        }
+
+        form > .divInput > i {
+            margin-left: 8px;
+            color: var(--gray);
+        }
+
+        form > .divInput > input{
+            width: 225px;
+            height: 50px;
+            border: none;
+            border-radius: 8px;
+            background-color: var(--bgInput);
+            color: var(--gray);
+        }
+
+        form > button {
+            width: 250px;
+            height: 50px;
+            border: none;
+            border-radius: 8px;
+            background-color: var(--orange);
+        }
+
+        .bottom > small {
+            color: var(--orange);
+        }
+
+        .image {
+            flex: 1;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url("background.png");
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <main class="principal">
+            <div class="header">
+                <h1>Rocket Notes</h1>
+                <h6>Aplicação para salvar e gerenciar seus Links úteis</h6>
+            </div>
+
+            <form action="">
+                <h3>Faça seu Login</h3>
+
+                <div class="divInput">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" placeholder="E-mail">
+                </div>
+
+                <div class="divInput">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Senha">
+                </div>
+                
+                <button>Entrar</button>
+            </form>
+
+            <div class="bottom">
+                <small>Criar Conta</small>
+            </div>
+        </main>
+        <section class="image">
+        </section>
+    </div>
+</body>
+</html>
