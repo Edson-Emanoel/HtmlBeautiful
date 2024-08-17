@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@400;500;600;700;800;900&display=swap');
+
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+}
+
+body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #333;
+}
+
+.container {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+}
+
+.container .card {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      background-color: #FFF; 
+      border-radius: 40px;
+      box-shadow: 0 20px 25px rgba(0, 0, 0, .25);
+      transition: .5s;
+      overflow: hidden;
+}
+
+.container .card:hover {
+      height: 420px;
+}
+
+.container .card .imgBx {
+      width: 100%;
+      height: 260px;
+      background: var(--img) no-repeat;
+      background-size: cover;
+      background-position: center;
+      opacity: .68;
+      cursor: pointer;
+      transition: .5s;
+}
+
+.container .card:hover .imgBx {
+      opacity: 1;
+}
+
+.container .card .imgBx::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 80px;
+      border-radius: 40px;
+      background-color: #FFF;
+      transition: .5s;
+}
+
+.container .card:hover .imgBx::before {
+      bottom: 120px;
+}
+
+.container .card .imgBx::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      bottom: 80px;
+      width: 80px;      
+      height: 80px;
+      border-radius: 50%;
+      background-color: transparent;
+      box-shadow: 75px 75px 0 40px #FFF;
+      transition: .5s;
+}
+
+.container .card:hover .imgBx::after {
+      bottom: 200px;
+}
+
+.container .card .content {
+      position: relative;
+      top: -40px;
+      padding: 0 30px;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+}
+
+.container .card .content h3 {
+      margin-top: 8px;
+      position: relative;
+      font-size: 1.25rem;
+      color: #333;
+}
+
+.container .card .content h3 span {
+      position: absolute;
+      font-weight: 400;
+      font-size: .85rem;
+      opacity: .75;
+}
+
+.container .card .content p {
+      position: relative;
+      top: 15px;
+      font-style: italic;
+      color: #333;
+      opacity: 0;
+      transition: .5s;
+}
+
+.container .card:hover .content p {
+      opacity: 1;
+}
