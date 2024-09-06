@@ -1,0 +1,52 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* Global */
+* {
+      font-family: 'Ubuntu', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+:root {
+      --blue: #2a2185;
+      --white: #FFF;
+      --gray: #F5F5F5;
+      --black1: #222;
+      --black2: #999;
+}
+
+body {
+      min-height: 100vh;
+      overflow-x: hidden;
+}
+
+.container {
+      position: relative;
+      width: 100%;
+}
+
+/* Navigation */
+.navigation {
+      position: fixed;
+      width: 300px;
+      height: 100%;
+      background-color: var(--blue);
+      border-left: 10px solid var(--blue);
+      transition: .5s;
+      overflow: hidden;
+}
+
+.navigation ul {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+}
+
+.navigation ul li {
+      position: relative;
+      width: 100%;
+      list-style: none;
+}
