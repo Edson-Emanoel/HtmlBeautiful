@@ -1,65 +1,66 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
 
 * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-      background-color: #6366F2;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
+    background-color: #6366f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 #container {
-      background-color: #F0F8FF;
-      width: 600px;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1);
+    background-color: #f0f8ff;
+    width: 600px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 .tab-buttons {
-      display: flex;
-      gap: 6px;
+    display: flex;
+    gap: 6px;
 }
 
 .tab-btn {
-      width: 100%;
-      border: none;
-      color: #020167;
-      border-radius: 8px 8px 0 0;
-      font-weight: 500;
-      padding: 8px;
-      cursor: pointer;
-      transition: background-color .3s ease-in;
+    width: 100%;
+    border: none;
+    color: #020617;
+    background-color: #f0f8ff;
+    border-radius: 8px 8px 0px 0px;
+    font-weight: 500;
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color .3s ease;
 }
 
 .tab-btn.active {
-      background-color: #C7D2FE;
+    background-color: #c7d2fe;
 }
 
 .tab-btn:hover {
-      background-color: #A5B4FC;
+    background-color: #a5b4fc;
 }
 
 .content {
-      display: none;
+    display: none;
 }
 
 .content.show {
-      display: flex;
-      gap: 14px;
-      background-color: #C7D2FE;
-      border-radius: 0 0 8px 8px;
-      padding: 16px;
+    display: flex;
+    gap: 14px;
+    background-color: #c7d2fe;
+    border-radius: 0px 0px 8px 8px;
+    padding: 16px;
 }
 
 .content-img {
-      width: 25%;
-      height: 250px;
+    width: 50%;
+    height: 250px;
 }
