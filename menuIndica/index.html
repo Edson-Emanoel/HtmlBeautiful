@@ -19,36 +19,36 @@
       <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
       <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-
       <script>
-            let marcador = document.querySelector('#marker')
-            let lista = document.querySelectorAll('ul li')
-      
+
+            let marcador = document.querySelector('#marker');
+            let lista = document.querySelectorAll('ul li');
+
             marcador.style.left  = 240 + 'px';
             marcador.style.width = 80 + 'px';
-
-            function moverIndicador(elemento) {
+      
+            function moverIndicador (elemento) {
                   marcador.style.left = elemento.offsetLeft + 'px';
                   marcador.style.width = elemento.offsetWidth + 'px';
             }
 
-            lista.forEach(link => {
+            lista.forEach((link) => {
                   link.addEventListener("click", (elemento) => {
-                        moverIndicador(elemento.target);
+                        moverIndicador(elemento.target)
                   })
             })
 
-            // Adiciona a classe
+            // Adicionar classe 'active' no item selecionado
 
-            function ativarLink() {
-                  lista.forEach(item => {
-                        item.classList.remove("active");
-                        this.classList.add("active");
+            function ativarLink () {
+                  lista.forEach((item) => {
+                        item.classList.remove('active')
+                        this.classList.add('active')
                   })
             }
 
-            lista.forEach(item => {
-                  item.addEventListener('click', ativarLink)
+            lista.forEach((item) => {
+                  item.addEventListener("click", ativarLink)
             })
 
       </script>
