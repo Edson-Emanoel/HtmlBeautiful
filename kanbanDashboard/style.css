@@ -1,0 +1,80 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+      font-size: 62.5%;
+      font-family: 'Inter', sans-serif;
+}
+
+body {
+      font-size: 1.6rem;
+      background-color: #7C3AED;
+}
+
+a {
+      text-decoration: none;
+}
+
+#app  {
+      display: grid;
+      grid-template-columns: max-content 1fr;
+
+      min-height: 100vh;
+}
+
+main .inner {
+      height: 100%;
+      background-color: #FBFAFF;
+      border-top-left-radius: 3.2rem;
+}
+
+main {
+      padding-top: .8rem;
+}
+
+nav {
+      padding: 3.2rem 2.7rem 0 3.5rem;
+}
+
+ul {
+      margin-top: 6rem;
+
+      list-style: none;
+      
+      display: grid;
+      gap: 3.6rem;
+
+      min-width: 11.5rem;
+}
+
+li a {
+      color: #CAB3FF;
+
+      display: flex;
+      align-items: center;
+      gap: 1.6rem;
+
+      font-weight: 500;
+}
+
+a.active,
+a:hover {
+      color: white;
+      font-weight: 700;
+}
+
+a ion-icon {
+      font-size: 2rem;
+}
+
+/* Inner */
+section.title-avatar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+}
