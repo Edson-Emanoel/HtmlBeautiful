@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Modal</title>
+</head>
+<body>
+      
+      <header>
+            <h1>Aula 02</h1>
+
+            <nav>
+                  <button id="btn-abrir">Abrir</button>
+                  <button id="btn-fechar">Fechar</button>
+            </nav>
+      </header>
+
+      <div class="container">
+            <form>
+                  <h2>Tela de Cadastro</h2>
+                  
+                  <input type="text" placeholder="Nome Completo" />
+                  
+                  <input type="email" placeholder="Email" />
+                  
+                  <input type="password" placeholder="Senha" />
+
+                  <button id="btn-cadastrar">Cadastrar</button>
+            </form>
+      </div>
+
+      <style>
+            * { margin: 0; padding: 0;  box-sizing: border-box; color: #FFF; font-family: system-ui; }
+            body{
+                  display: flex;
+                  flex-direction: column; background-color: #000000;
+                  align-items: center;
+            }
+
+
+            header {
+                  width: 100vw;
+                  height: 100px;
+                  background-color: #1D1D1D;
+                  
+                  gap: 10px;
+                  display: flex;
+                  align-items: center;
+                  flex-direction: column;
+            }
+            h1 {
+                  margin-top: 10px;
+            }
+            nav button {
+                  width: 100px;
+
+                  padding: 3px 5px;
+                  border-radius: 4px;
+                  border: none;
+                  font-size: 16px;
+                  font-weight: 500;
+
+                  background-color: #2f2672;
+
+                  transition: all .3s;
+            }
+            nav button:hover {
+                  background-color: #4d4090;
+                  cursor: pointer;
+            }
+
+
+            .container {
+                  display: none;
+                  margin-top: 40px;
+                  width: 50vw;
+                  height: 400px;
+                  background-color: #0F0F0F;
+
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+            }
+            
+            
+            form {
+                  width: 50%;
+
+                  margin-top: 20px;
+                  gap: 15px;
+
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  flex-direction: column;
+            }
+            input {
+                  width: 250px;
+                  height: 35px;
+
+                  border: none;
+                  outline: none;
+
+                  font-size: 16px;
+
+                  padding-left: 5px;
+                  border-radius: 4px;
+
+                  background-color: #1F2028;
+                  color: rgba(255, 255, 255, .87);
+            }
+            form button {
+                  width: 120px;
+                  height: 28px;
+                  
+                  border: none;
+                  outline: none;
+                  border-radius: 4px;
+                  font-size: 16px;
+                  font-weight: 500;
+
+                  background-color: #1F2028;
+                  transition: all .3s;
+            }
+            form button:hover {
+                  cursor: pointer;
+                  background-color: #2E3039;
+            }
+      </style>
+
+      <script>
+            var btnAbrir = document.querySelector("#btn-abrir")
+            var btnFechar = document.querySelector("#btn-fechar")
+            var btnCadastrar = document.querySelector("#btn-cadastrar")
+            var ctx = document.querySelector('.container')
+
+            btnAbrir.onclick = (e) => {
+                  e.preventDefault();
+
+                  ctx.style.display = 'flex'
+            }
+            btnAbrir.addEventListener("click", (e) => {
+                  e.preventDefault();
+
+                  ctx.style.display = 'flex'
+            })
+
+            btnFechar.onclick = (e) => {
+                  e.preventDefault();
+
+                  ctx.style.display = 'none'
+            }
+            btnFechar.addEventListener("click", (e) => {
+                  e.preventDefault();
+
+                  ctx.style.display = 'none'
+            })
+
+            btnCadastrar.onclick = (e) => {
+                  e.preventDefault();
+
+                  ctx.style.display = 'none'
+            }
+            btnCadastrar.addEventListener("click", (e) => {
+                  e.preventDefault();
+
+                  ctx.style.display = 'none'
+            })
+      </script>
+</body>
+</html>
