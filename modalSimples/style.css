@@ -1,0 +1,193 @@
+/* Tema */
+:root{
+  
+      --primary-background-color: #fff;
+      --secondary-background-color:#f7f7f7;
+      
+      --header-background-color: #e0e0e0;
+
+      --body-background-color:#f7f7f7;
+      --container-background-color:#e0e0e0;
+
+      --primary-text-color:#000;
+    
+      --button-solid-background-color:#e14b2f;
+      --button-solid-text-color: #fff;
+
+      --button-text-color:#000;
+
+      --button-solid-background-color-hover:#e95d3f;
+}
+
+[data-theme="dark"]{
+      --primary-background-color: #1F2028;
+      --secondary-background-color:#2E3039;
+      
+      --header-background-color: #1D1D1D;
+
+      --body-background-color: #000000;
+      --container-background-color: #0F0F0F;
+      
+      --primary-text-color: rgba(255, 255, 255, .87);
+    
+      --button-solid-background-color:#2f2672;
+      --button-solid-text-color:#FFF;
+
+      --button-text-color:#FFF;
+
+      --button-solid-background-color-hover:#4d4090;
+}
+
+#themes {
+      gap: 5px;
+      display: flex;
+      flex-direction: row;
+}
+.theme-options {
+      gap: 10px;
+      display: flex;
+}
+
+.theme-option {
+      width: 25px;
+      height: 25px;
+      border: 1px solid;
+      border-radius: 50%;
+      cursor: pointer;
+}
+
+#light{
+      background-color: #FFF;
+      border-color: #000;
+}
+#dark{
+      background-color: #000;
+      border-color: #FFF;
+}
+
+/* Geral */
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: system-ui;
+}
+
+body{
+      display: flex;
+      flex-direction: column; background-color: var(--body-background-color);
+      align-items: center;
+}
+
+/* Header */
+header {
+      width: 100vw;
+      height: 100px;
+      background-color: var(--header-background-color);
+      
+      gap: 10px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+}
+h1 {
+      margin-top: 10px;
+      color: var(--primary-text-color);
+}
+nav {
+      gap: 35px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+nav #buttons button {
+      width: 100px;
+
+      padding: 3px 5px;
+      border-radius: 4px;
+      border: none;
+      font-size: 16px;
+      font-weight: 500;
+
+      background-color: var(--button-solid-background-color);
+      color: var(--button-solid-text-color);
+
+      transition: all .3s;
+}
+nav #buttons button:hover {
+      background-color: var(--button-solid-background-color-hover);
+      cursor: pointer;
+}
+#btn-abrir {
+      margin-left: 80px;
+}
+
+/* Container */
+.container {
+      margin-top: 40px;
+
+      width: 400px;
+      height: 450px;
+      
+      border-radius: 15px;
+      background-color: var(--container-background-color);
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+}
+
+/* Formulário */
+form {
+      width: 50%;
+
+      margin-top: 20px;
+      gap: 15px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+}
+
+form h2 {
+      color: var(--primary-text-color);
+}
+
+input {
+      width: 250px;
+      height: 35px;
+
+      border: none;
+      outline: none;
+
+      font-size: 16px;
+
+      padding-left: 5px;
+      border-radius: 4px;
+
+      background-color: var(--primary-background-color);
+      color: var(--primary-text-color);
+}
+
+#btn-cadastrar {
+      width: 120px;
+      height: 28px;
+      
+      border: none;
+      outline: none;
+      border-radius: 4px;
+      font-size: 16px;
+      font-weight: 500;
+
+      background-color: var(--primary-background-color);
+      color: var(--button-text-color);
+
+      transition: all .3s;
+}
+#btn-cadastrar:hover {
+      cursor: pointer;
+      background-color: var(--secondary-background-color);
+}
